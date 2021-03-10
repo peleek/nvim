@@ -12,7 +12,6 @@ nnoremap <Space> <Nop>
 " Better indenting
 vnoremap < <gv
 vnoremap > >gv
-
 if exists('g:vscode')
 
   " Simulate same TAB behavior in VSCode
@@ -47,7 +46,9 @@ else
   " Alternate way to save
   nnoremap <silent> <C-s> :w<CR>
   " Alternate way to quit
-  nnoremap <silent> <C-Q> :wq!<CR>
+  nnoremap <silent> <C-Q> :wq<CR>
+  " Discard changes
+  nnoremap <silent> <C-d> :e!<CR>
   " Use control-c instead of escape
   nnoremap <silent> <C-c> <Esc>
   " <TAB>: completion.
@@ -71,15 +72,15 @@ else
   tnoremap <Esc> <C-\><C-n>
 
   " Use alt + hjkl to resize windows
-  " nnoremap <silent> <M-j>    :resize -2<CR>
-  " nnoremap <silent> <M-k>    :resize +2<CR>
-  " nnoremap <silent> <M-h>    :vertical resize -2<CR>
-  " nnoremap <silent> <M-l>    :vertical resize +2<CR>
+  nnoremap <silent> <M-j>    :resize -2<CR>
+  nnoremap <silent> <M-k>    :resize +2<CR>
+  nnoremap <silent> <M-h>    :vertical resize -2<CR>
+  nnoremap <silent> <M-l>    :vertical resize +2<CR>
 
-  nnoremap <silent> <C-Up>    :resize -2<CR>
-  nnoremap <silent> <C-Down>  :resize +2<CR>
-  nnoremap <silent> <C-Left>  :vertical resize -2<CR>
-  nnoremap <silent> <C-Right> :vertical resize +2<CR>
+  " nnoremap <silent> <C-Up>    :resize -2<CR>
+  " nnoremap <silent> <C-Down>  :resize +2<CR>
+  " nnoremap <silent> <C-Left>  :vertical resize -2<CR>
+  " nnoremap <silent> <C-Right> :vertical resize +2<CR>
 
   let g:elite_mode=0                      " Disable arrows"
   " Disable arrow movement, resize splits instead.
