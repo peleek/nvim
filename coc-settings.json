@@ -58,12 +58,13 @@
   // list
   "list.indicator": ">",
   "list.selectedSignText": " ",
-
+  "eslint.autoFixOnSave": true,
   // autoformat
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
     "javascript",
+    "typescript",
     "graphql",
     "html",
     "yaml",
